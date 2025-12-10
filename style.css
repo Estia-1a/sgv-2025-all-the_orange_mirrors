@@ -23,6 +23,12 @@ header {
     justify-content: space-between;
     padding: 10px 0;
     margin-bottom: 40px;
+    background-color: #d0f0c0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 40px;
 }
 
 .logo {

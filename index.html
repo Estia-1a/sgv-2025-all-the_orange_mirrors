@@ -4,28 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
-    <title>Site de location étudiante</title>
+    <link rel="stylesheet" href="styles/desktop_accueil.css" media="screen and (min-width: 768px)"> 
+    <link rel="stylesheet" href="styles/mobile_accueil.css" media="screen and (max-width: 767px)"> 
+    
+    <title>LocaStudy | Site de location étudiante</title>
 </head>
 <body>
-    <h1>LocaStudy</h1>
-    <img src="media/pictures/Profil Inconnu.png" alt = "Photo de profil">
-    <p><a href="Se connecter.html">Se connecter</a></p>
-    <p><a href="">Créer un compte</a></p>
-    <h1>Qui sommes nous ?</h1>
-        <p>Chez LocaStudy, nous croyons que trouver un logement étudiant ne devrait pas être un parcours du combattant. Notre mission est simple : offrir aux étudiants un accès rapide, sécurisé et abordable à des logements adaptés à leurs besoins.
-Créée par une équipe passionnée d’éducation et de technologie, LocaStudy est né d’un constat : trop d’étudiants perdent du temps et de l’énergie dans des démarches complexes. Nous avons donc imaginé une plateforme intuitive qui réunit propriétaires vérifiés et étudiants en quête d’un chez-soi, le tout dans un environnement 100 % digital.<br>
-Nous voulons que chaque étudiant, qu’il soit en France ou ailleurs, puisse trouver son logement en quelques clics, sans stress et sans mauvaises surprises. Parce que réussir ses études commence par se sentir bien chez soi.</p>
-    <h1>Pourquoi nous choisir ?</h1>
-        <ul>
-            <li>Transparence : des annonces claires et vérifiées.</li>
-            <li>Accessibilité : des loyers adaptés et aucune commission cachée.</li>
-            <li>Sécurité : paiements protégés et contrats dématérialisés.</li>
-            <li>Proximité : un support disponible pour accompagner chaque étape.</li>
-            <li>A l'écoute : vous entrez vos informations et on vous trouve ce qui vous correspond.</li>
-        </ul>
-    <p>Contact : 06.64.06.64.06     LocaStudy@estia.64      Technopole Izarbel, 64210 Bidart</p>
+    
+    <header>
+        <h1>LocaStudy</h1>
+        <div class="user-actions">
+            <img src="media/pictures/Profil Inconnu.png" alt="Photo de profil par défaut">
+            <nav>
+                <a href="Se connecter.html" class="button-primary">Se connecter</a>
+                <a href="#" class="button-secondary">Créer un compte</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="about">
+            <h2>Qui sommes nous ?</h2>
+            <p>Chez LocaStudy, nous croyons que trouver un logement étudiant ne devrait pas être un parcours du combattant. Notre mission est simple : offrir aux étudiants un accès rapide, sécurisé et abordable à des logements adaptés à leurs besoins.</p>
+            <p>Créée par une équipe passionnée d’éducation et de technologie, LocaStudy est né d’un constat : trop d’étudiants perdent du temps et de l’énergie dans des démarches complexes. Nous avons donc imaginé une plateforme intuitive qui réunit propriétaires vérifiés et étudiants en quête d’un chez-soi, le tout dans un environnement 100 % digital.<br>
+            Nous voulons que chaque étudiant, qu’il soit en France ou ailleurs, puisse trouver son logement en quelques clics, sans stress et sans mauvaises surprises. Parce que réussir ses études commence par se sentir bien chez soi.</p>
+        </section>
+        
+        <section id="why-us">
+            <h2>Pourquoi nous choisir ?</h2>
+            <ul>
+                <li><strong>Transparence</strong> : des annonces claires et vérifiées.</li>
+                <li><strong>Accessibilité</strong> : des loyers adaptés et aucune commission cachée.</li>
+                <li><strong>Sécurité</strong> : paiements protégés et contrats dématérialisés.</li>
+                <li><strong>Proximité</strong> : un support disponible pour accompagner chaque étape.</li>
+                <li><strong>A l'écoute</strong> : vous entrez vos informations et on vous trouve ce qui vous correspond.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Contact : 06.64.06.64.06 | LocaStudy@estia.64 | Technopole Izarbel, 64210 Bidart</p>
+    </footer>
     
 </body>
 </html>
