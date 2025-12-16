@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/desktop_profile.css" media="screen and (min-width: 768px)"> 
+    <link rel="stylesheet" href="styles/mobile_profile.css" media="screen and (max-width: 767px)"> 
+    
+    <title>Mon Profil | LocaStudy</title>
+</head>
+<body>
+    
+    <header>
+        <h1><a href="index.html" style="color: white; text-decoration: none;">LocaStudy</a></h1>
+        <div class="user-actions">
+            <nav>
+                <a href="index.html" class="button-secondary">Retour à l'accueil</a>
+                <a href="#" class="button-primary">Se déconnecter</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="profile-layout">
+            
+            <section class="profile-card">
+                <div class="profile-img-container">
+                    <img src="media/pictures/Profil Inconnu.png" alt="Photo de profil">
+                </div>
+                <h2>Jean Dupont</h2>
+                <p class="role">Étudiant</p>
+                <p>Membre depuis 2023</p>
+                <button class="button-secondary" style="color: #007bff; border-color: #007bff; margin-top: 10px;">Changer la photo</button>
+            </section>
+
+            <section class="profile-form-section">
+                <h2>Mes informations personnelles</h2>
+                
+                <form action="#" method="POST">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" value="Dupont">
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" value="Jean">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" value="jean.dupont@estia.fr">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="tel" id="phone" name="phone" value="06.12.34.56.78">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Ma recherche (Bio)</label>
+                        <textarea id="bio" name="bio" rows="4">Étudiant en 1ère année à l'ESTIA, je cherche un studio calme proche de Bidart.</textarea>
+                    </div>
+
+                    <button type="submit" class="button-primary" style="width: 100%; margin-top: 20px;">Enregistrer les modifications</button>
+
+                </form>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>Contact : 06.64.06.64.06 | LocaStudy@estia.64 | Technopole Izarbel, 64210 Bidart</p>
+    </footer>
+    
+</body>
+</html>
