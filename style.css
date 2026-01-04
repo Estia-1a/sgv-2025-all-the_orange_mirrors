@@ -317,10 +317,10 @@ button:active {
 }
 
 .bouton_modifier_Profil {
-    background-color: #ffff00; /* Jaune vif */
-    display: inline-block;     /* Permet de respecter les dimensions et marges */
-    text-decoration: none;     /* Supprime le soulignement du lien */
-    color: black;              /* Couleur du texte */
+    background-color: #ffff00;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
     padding: 10px 20px;
     border: 3px solid black;
     font-weight: bold;
@@ -329,7 +329,6 @@ button:active {
     text-align: center;
 }
 
-/* Ajoutez ceci pour garder l'effet d'ombre au clic */
 .bouton_modifier_Profil:active {
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0px black;
@@ -342,4 +341,98 @@ button:active {
 .bouton_supprimer_Profil {
     background-color: #d00000;
     color: white;
+}
+
+
+
+/*/////////////////////////////////////////////////
+STYLE DE LA PAGE MODIFIER MES INFORMATIONS PERSONNELLES
+/////////////////////////////////////////////////*/
+
+
+.ModifierProfil {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Cadrage_Modif_Profil {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.titre_Modif_Profil {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.Informations_Gauche_Modif_Profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.Informations_Droite_Modif_Profil {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label_modif_profil {
+    border: 3px solid black;
+    padding: 5px 15px;
+    min-width: 220px;
+    text-align: left;
+    font-weight: bold;
+    background-color: white;
+}
+
+.input_modifier {
+    border: 3px solid black;
+    padding: 8px 15px;
+    width: 250px;
+    font-family: inherit;
+    outline: none;
+    background-color: white;
+}
+
+.actions_profil_modifier {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.bouton_valider_modif, 
+.bouton_annuler_modif {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 3px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    box-shadow: 4px 4px 0px black;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.bouton_valider_modif {
+    background-color: #008000;
+}
+
+.bouton_annuler_modif {
+    background-color: #d00000;
+}
+
+.bouton_valider_modif:active, 
+.bouton_annuler_modif:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px black;
 }
