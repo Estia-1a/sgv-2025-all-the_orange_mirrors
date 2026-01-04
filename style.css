@@ -9,7 +9,7 @@ Style de la page d'accueil
     font-family: Arial, sans-serif;
 }
 
-body {
+body.Accueil {
     background-color: white;
     /* On retire le padding global pour que la bande verte touche les bords si besoin */
     display: flex;
@@ -22,8 +22,7 @@ a {
     color: black;
 }
 
-
-header {
+header.Accueil {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +38,7 @@ header {
     color: black;
 }
 
-.barre_nav {
+.barre_nav_Accueil {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -101,7 +100,7 @@ header {
     background-color: #0056b3;
 }
 
-main {
+main.Accueil {
     padding: 20px 30px;
     width: 100%;
 }
@@ -155,7 +154,7 @@ main {
 STYLE DE LA PAGE CRÉER UN COMPTE 
 /////////////////////////////////////*/
 
-body {
+body.création {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     display: flex;
     justify-content: center;
@@ -163,18 +162,18 @@ body {
     background-color: #ffffff;
 }
 
-.container {
+.Cadrage_Informations {
     width: 80%;
     max-width: 800px;
     text-align: center;
 }
 
-h1 {
+h1.création {
     font-size: 2.5rem;
     margin-bottom: 40px;
 }
 
-.form-grid {
+.Cases_Informations {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px 40px;
@@ -182,7 +181,7 @@ h1 {
     align-items: center;
 }
 
-label {
+label.création {
     border: 2px solid black;
     padding: 5px 10px;
     text-align: left;
@@ -198,7 +197,7 @@ input {
     outline: none;
 }
 
-.button-group {
+.Boutons_Valider_Et_Annuler {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -217,12 +216,12 @@ button:active {
     box-shadow: 1px 1px 0px black;
 }
 
-.btn-valider {
+.bouton_valider {
     background-color: #008000;
     color: white;
 }
 
-.btn-annuler {
+.bouton_annuler {
     background-color: #b22222;
     color: white;
 }
