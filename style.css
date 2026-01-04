@@ -1,4 +1,8 @@
-*{
+/* ///////////////////////////////
+Style de la page d'accueil
+////////////////////////////////*/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +11,9 @@
 
 body {
     background-color: white;
-    padding: 20px; 
+    /* On retire le padding global pour que la bande verte touche les bords si besoin */
+    display: flex;
+    flex-direction: column; /* Force l'empilement vertical du header et du main */
 }
 
 
@@ -21,14 +27,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
-    margin-bottom: 40px;
+    padding: 40px 30px; /* Ajusté pour donner de la hauteur à la bande */
     background-color: #d0f0c0;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    margin-bottom: 40px;
+    width: 100%; /* Prend toute la largeur pour pousser le reste dessous */
+    margin-bottom: 20px;
 }
 
 .logo_LocaStudy {
@@ -41,11 +43,12 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
+    flex-grow: 1; /* Permet à la nav de prendre l'espace central */
+    justify-content: space-around;
 }
 
-
 .forme_Barre_Recherche input[type="search"] {
-    padding: 8px 15px;
+    padding: 10px 15px;
     border: 1px solid black;
     border-radius: 20px;
     width: 350px;
@@ -68,30 +71,21 @@ header {
     display: flex;
     gap: 15px; 
 }
-.Bouton_MesFavoris {
-    background-color: #d00000;
-    border-color: black;
-}
 
-.Bouton_MonProfil {
-    background-color: #1a75ff;
-    border-color: black;
-}
+.Bouton_MesFavoris { background-color: #d00000; }
+.Bouton_MonProfil { background-color: #1a75ff; }
 
 .Bouton_MesFavoris, .Bouton_MonProfil {
     padding: 10px 20px;
-    border: none; 
+    border: 2px solid black; /* Bordure noire comme sur la maquette */
     border-radius: 20px;
-
     color: white; 
     font-size: 15px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 1); /* Ombre pleine pour l'effet "dessiné" */
 }
 
 .Bouton_MesFavoris:hover, .Bouton_MonProfil:hover {
@@ -107,10 +101,16 @@ header {
     background-color: #0056b3;
 }
 
-.Sous_titre_Annonces{
+main {
+    padding: 20px 30px;
+    width: 100%;
+}
+
+.Sous_titre_Annonces {
     background-color: #ffff00; 
     display: inline-block;
     padding: 5px 10px;
+    border: 2px solid black; /* Bordure noire pour le titre aussi */
     font-size: 18px;
     font-weight: bold;
     color: black;
@@ -119,7 +119,7 @@ header {
 
 .Disposition_Images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne */
     gap: 40px 20px;
     justify-items: center;
 }
@@ -129,13 +129,12 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 250px;
 }
 
 .image_logement {
-    width: 100%;
+    width: 180px; /* Taille fixe pour l'uniformité */
     height: 150px; 
-    border: 1px solid black;
+    border: 2px solid black; /* Bordure plus épaisse */
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -148,6 +147,82 @@ header {
 
 .Titre_Logement {
     font-size: 16px;
-    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+/* ////////////////////////////////////
+STYLE DE LA PAGE CRÉER UN COMPTE 
+/////////////////////////////////////*/
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 40px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+label {
+    border: 2px solid black;
+    padding: 5px 10px;
+    text-align: left;
+    justify-self: end;
+    min-width: 150px;
+}
+
+input {
+    border: 2px solid black;
+    padding: 8px;
+    width: 250px;
+    justify-self: start;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px black;
+}
+
+.btn-valider {
+    background-color: #008000;
+    color: white;
+}
+
+.btn-annuler {
+    background-color: #b22222;
+    color: white;
 }
