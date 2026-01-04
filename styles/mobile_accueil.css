@@ -1,8 +1,5 @@
-/* Fichier: styles/mobile.css */
-
-/* L'en-tête en mode colonne */
 header {
-    flex-direction: column; /* Empile les éléments les uns sur les autres */
+    flex-direction: column; 
     text-align: center;
 }
 
@@ -10,7 +7,7 @@ header {
     margin-top: 15px;
 }
 
-/* Le contenu principal prend toute la largeur */
+
 main {
     padding: 10px 20px;
     margin: 10px auto;
