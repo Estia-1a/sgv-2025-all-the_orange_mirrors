@@ -299,6 +299,7 @@ body.Profil {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-top: 50px;
 }
 
 button {
@@ -316,33 +317,42 @@ button:active {
     box-shadow: 2px 2px 0px black;
 }
 
-.bouton_modifier_Profil {
-    background-color: #ffff00;
+.bouton_modifier_Profil, 
+.bouton_deconnecter_Profil, 
+.bouton_supprimer_Profil {
     display: inline-block;
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border: 3px solid black;
     font-weight: bold;
-    box-shadow: 4px 4px 0px black;
-    cursor: pointer;
+    text-decoration: none; /* Enlève le soulignement bleu */
+    color: black;
     text-align: center;
+    min-width: 300px;
+    box-shadow: 5px 5px 0px black; /* L'ombre noire épaisse de la maquette */
+    transition: transform 0.1s;
 }
 
-.bouton_modifier_Profil:active {
-    transform: translate(2px, 2px);
-    box-shadow: 2px 2px 0px black;
+/* Couleurs spécifiques selon votre image */
+.bouton_modifier_Profil {
+    background-color: #ffff00; /* Jaune vif */
 }
 
 .bouton_deconnecter_Profil {
-    background-color: #ffaa00e5;
+    background-color: #ffa500; /* Orange */
 }
 
 .bouton_supprimer_Profil {
-    background-color: #d00000;
-    color: white;
+    background-color: #d00000; /* Rouge */
+    color: white; /* Texte blanc pour le bouton rouge */
 }
 
+/* Effet au clic pour simuler l'appui sur un bouton */
+.bouton_modifier_Profil:active, 
+.bouton_deconnecter_Profil:active, 
+.bouton_supprimer_Profil:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0px black;
+}
 
 
 /*/////////////////////////////////////////////////
