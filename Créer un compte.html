@@ -6,34 +6,34 @@
     <title>Créer un compte</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Création du compte</h1>
+<body class="création">
+    <div class="Cadrage_Informations">
+        <h1 class="création">Création du compte</h1>
         
         <form action="traitement.php" method="POST">
-            <div class="form-grid">
-                <label>Nom d'utilisateur :</label>
+            <div class="Cases_Informations">
+                <label class="création">Nom d'utilisateur :</label>
                 <input type="text" name="username" required>
 
-                <label>Mot de passe :</label>
+                <label class="création">Mot de passe :</label>
                 <input type="password" name="password" required>
 
-                <label>Nom :</label>
+                <label class="création">Nom :</label>
                 <input type="text" name="nom" required>
 
-                <label>Prénom :</label>
+                <label class="création">Prénom :</label>
                 <input type="text" name="prenom" required>
 
-                <label>Sexe :</label>
+                <label class="création">Sexe :</label>
                 <input type="text" name="sexe">
 
-                <label>Numéro de téléphone :</label>
-                <input type="tel" name="phonenumber" required>
+                <label class="création">Numéro de téléphone :</label>
+                <input type="tel" name="numéro de téléphone" required>
             </div>
 
-            <div class="button-group">
-                <button type="submit" class="btn-valider" onclick="window.location.href='page accueil.html'">Valider et créer mon compte</button>
-                <button type="button" class="btn-annuler" onclick="window.location.href='index.html'">Annuler</button>
+            <div class="Boutons_Valider_Et_Annuler">
+                <button type="submit" class="bouton_valider" onclick="window.location.href='page accueil.html'">Valider et créer mon compte</button>
+                <button type="button" class="bouton_annuler" onclick="window.location.href='index.html'">Annuler</button>
             </div>
         </form>
     </div>
