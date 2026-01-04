@@ -11,9 +11,8 @@ Style de la page d'accueil
 
 body.Accueil {
     background-color: white;
-    /* On retire le padding global pour que la bande verte touche les bords si besoin */
     display: flex;
-    flex-direction: column; /* Force l'empilement vertical du header et du main */
+    flex-direction: column;
 }
 
 
@@ -26,9 +25,9 @@ header.Accueil {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 30px; /* Ajusté pour donner de la hauteur à la bande */
+    padding: 40px 30px;
     background-color: #d0f0c0;
-    width: 100%; /* Prend toute la largeur pour pousser le reste dessous */
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -42,7 +41,7 @@ header.Accueil {
     display: flex;
     align-items: center;
     gap: 40px;
-    flex-grow: 1; /* Permet à la nav de prendre l'espace central */
+    flex-grow: 1;
     justify-content: space-around;
 }
 
@@ -76,7 +75,7 @@ header.Accueil {
 
 .Bouton_MesFavoris, .Bouton_MonProfil {
     padding: 10px 20px;
-    border: 2px solid black; /* Bordure noire comme sur la maquette */
+    border: 2px solid black;
     border-radius: 20px;
     color: white; 
     font-size: 15px;
@@ -84,7 +83,7 @@ header.Accueil {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    box-shadow: 0 4px 0px rgba(0, 0, 0, 1); /* Ombre pleine pour l'effet "dessiné" */
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 1);
 }
 
 .Bouton_MesFavoris:hover, .Bouton_MonProfil:hover {
@@ -109,7 +108,7 @@ main.Accueil {
     background-color: #ffff00; 
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid black; /* Bordure noire pour le titre aussi */
+    border: 2px solid black;
     font-size: 18px;
     font-weight: bold;
     color: black;
@@ -118,7 +117,7 @@ main.Accueil {
 
 .Disposition_Images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne */
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px 20px;
     justify-items: center;
 }
@@ -131,9 +130,9 @@ main.Accueil {
 }
 
 .image_logement {
-    width: 180px; /* Taille fixe pour l'uniformité */
+    width: 180px;
     height: 150px; 
-    border: 2px solid black; /* Bordure plus épaisse */
+    border: 2px solid black;
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -324,29 +323,27 @@ button:active {
     padding: 10px 25px;
     border: 3px solid black;
     font-weight: bold;
-    text-decoration: none; /* Enlève le soulignement bleu */
+    text-decoration: none;
     color: black;
     text-align: center;
     min-width: 300px;
-    box-shadow: 5px 5px 0px black; /* L'ombre noire épaisse de la maquette */
+    box-shadow: 5px 5px 0px black;
     transition: transform 0.1s;
 }
 
-/* Couleurs spécifiques selon votre image */
 .bouton_modifier_Profil {
-    background-color: #ffff00; /* Jaune vif */
+    background-color: #ffff00;
 }
 
 .bouton_deconnecter_Profil {
-    background-color: #ffa500; /* Orange */
+    background-color: #ffa500;
 }
 
 .bouton_supprimer_Profil {
-    background-color: #d00000; /* Rouge */
-    color: white; /* Texte blanc pour le bouton rouge */
+    background-color: #d00000;
+    color: white;
 }
 
-/* Effet au clic pour simuler l'appui sur un bouton */
 .bouton_modifier_Profil:active, 
 .bouton_deconnecter_Profil:active, 
 .bouton_supprimer_Profil:active {
@@ -574,4 +571,125 @@ STYLE DE LA PAGE HTML ANNONCE DU LOGEMENT
 
 .etoiles {
     letter-spacing: 5px;
+}
+
+
+/*///////////////////////////////////////////////////
+STYLE DE LA PAGE HTML DE MES FAVORIS
+//////////////////////////////////////////////////*/
+
+.page_favoris {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.navigation_haute_favoris {
+    margin-bottom: 30px;
+}
+
+.bouton_retour_bleu {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 3px solid black;
+    background-color: #1a75ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 0px black;
+}
+
+.conteneur_favoris {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titre_section_favoris {
+    background-color: #ffff00;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid black;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.carte_favori {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.favori_details_gauche {
+    flex: 2;
+}
+
+.titre_logement_favori {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.favori_image_texte {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.image_favori {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.description_courte_favori {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.favori_actions_droite {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.bouton_acceder, 
+.bouton_supprimer_favori {
+    width: 200px;
+    padding: 10px;
+    border: 3px solid black;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    transition: transform 0.1s;
+}
+
+.bouton_acceder {
+    background-color: #00c853;
+    color: white;
+}
+
+.bouton_supprimer_favori {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.bouton_acceder:active, 
+.bouton_supprimer_favori:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px black;
+}
+
+.separateur_favori {
+    border: none;
+    border-top: 2px solid black;
+    margin: 10px 0;
 }
