@@ -1,0 +1,93 @@
+/* --- Mise en page globale --- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Création du bandereau bleu (90px) et du fond gris via un dégradé */
+    background: linear-gradient(to bottom, #007bff 85px, #abacac 85px);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- La Carte de Connexion (Blanche) --- */
+.login-container {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+    position: relative; /* Nécessaire pour positionner le bouton retour */
+}
+
+/* --- Titre "Connexion" --- */
+.login-container h2:nth-of-type(2) {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* --- Champs de formulaire (Input) --- */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+}
+
+/* --- Bouton "Se connecter" --- */
+button[type="submit"] {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+button[type="submit"] a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button[type="submit"] a:hover {
+    background-color: #004494;
+}
+
+
+.login-container h2:first-child button {
+    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.login-container h2:first-child a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* --- Lien "Mot de passe oublié" --- */
+.link button {
+    background: none;
+    border: none;
+    margin-top: 15px;
+    color: #666;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
