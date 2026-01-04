@@ -225,3 +225,106 @@ button:active {
     background-color: #b22222;
     color: white;
 }
+
+
+/* ////////////////////////////////////
+STYLE DE LA PAGE CRÉER UN COMPTE 
+/////////////////////////////////////*/
+
+body.Profil {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.navigation-haute {
+    margin-bottom: 20px;
+}
+
+.bouton_retour_profil {
+    display: inline-block;
+    padding: 5px 15px;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    box-shadow: 3px 3px 0px black;
+}
+
+.Cadrage_Profil {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titre_Profil {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.Informations_Gauche_Profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.Informations_Droite_Profil {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label_profil {
+    border: 3px solid black;
+    padding: 5px 10px;
+    min-width: 200px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Données_Profil {
+    flex-grow: 1;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.actions_profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px black;
+}
+
+.bouton_modifier_Profil {
+    background-color: #ffff00;
+}
+
+.bouton_deconnecter_Profil {
+    background-color: #ffaa00e5;
+}
+
+.bouton_supprimer_Profil {
+    background-color: #d00000;
+    color: white;
+}
