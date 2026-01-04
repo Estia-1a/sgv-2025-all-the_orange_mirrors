@@ -228,7 +228,7 @@ button:active {
 
 
 /* ////////////////////////////////////
-STYLE DE LA PAGE CRÉER UN COMPTE 
+STYLE DE LA PAGE MON PROFIL 
 /////////////////////////////////////*/
 
 body.Profil {
@@ -317,7 +317,22 @@ button:active {
 }
 
 .bouton_modifier_Profil {
-    background-color: #ffff00;
+    background-color: #ffff00; /* Jaune vif */
+    display: inline-block;     /* Permet de respecter les dimensions et marges */
+    text-decoration: none;     /* Supprime le soulignement du lien */
+    color: black;              /* Couleur du texte */
+    padding: 10px 20px;
+    border: 3px solid black;
+    font-weight: bold;
+    box-shadow: 4px 4px 0px black;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Ajoutez ceci pour garder l'effet d'ombre au clic */
+.bouton_modifier_Profil:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px black;
 }
 
 .bouton_deconnecter_Profil {
